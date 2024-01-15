@@ -1,0 +1,12 @@
+.blackBox{
+    height: 57rem;
+    width: 47rem;
+    overflow:hidden;
+}
+.g-sign-btn{
+    width: 40rem;
+    padding: 12px;
+}
+.g-sign-logo{
+   margin-left: 7%;
+}
