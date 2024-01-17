@@ -1,12 +1,21 @@
 .blackBox{
-    height: 57rem;
-    width: 47rem;
+   width:72%;
     overflow:hidden;
 }
 .g-sign-btn{
-    width: 40rem;
-    padding: 12px;
+  background-color: #EFF7FF;
 }
 .g-sign-logo{
    margin-left: 7%;
 }
+.user_review_grid{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.horizontal_separator_flex{
+  display: grid;
+  grid-template-columns:47.5% 5% 47.5%;
+}
+  
+  
+  
