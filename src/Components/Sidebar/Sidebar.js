@@ -17,12 +17,12 @@ export default function Sidebar() {
     {users.map((user,index) => (
         <div key={index} className="w-80 h-64 ">
           <div className="w-56 h-56 bg-zinc-900 rounded-3xl pl-3 ">
-          <img className="pt-5 w-16 h-14" src={user.company_logo} alt="Logo" />
+          <Image alt="Comapny-logo" className="pt-5 w-16 h-14" src={user.company_logo} />
           <div className="pt-2 w-48 px-1 text-white text-xs font-normal font-['Anderson Grotesk'] leading-tight">
             {user.review}
           </div>
           <div className='pt-5 user_review_grid'>
-            <img className="w-9 h-9 rounded-full" src={user.user_img_url} alt="Avatar" />
+            <Image alt="user" className="w-9 h-9 rounded-full" src={user.user_img_url} />
             <div>
                 <div className="text-white text-sm font-['Anderson Grotesk']">
                     {user.name}

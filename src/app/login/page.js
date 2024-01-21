@@ -1,12 +1,12 @@
 import Link from 'next/link'; 
 import Sidebar from '@/Components/Sidebar/Sidebar';
-import '../sign-up/login.css';
+import './login.css';
 import G_sign_and_separator from '@/Components/G_sign_and _separator';
 import TextEditor from '@/Components/TextEditor/TextEditor';
 import Login_button from '@/Components/Button/Login_button';
 import CreateOrLoginText from '@/Components/CreateOrLoginText';
 
-export default function signup() {
+export default function Login() {
     return(<div className='grid grid-cols-2'>
         <Sidebar/>
         <div className="w-9/12">

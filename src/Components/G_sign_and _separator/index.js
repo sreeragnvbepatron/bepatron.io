@@ -1,10 +1,11 @@
 import '../../app/sign-up/login.css';
+import Image from 'next/image'
 export default function G_sign_and_separator() {
     return(<div>
         <div className='pt-8'>
                 <div className="text-center py-3 text-white font-bold rounded rounded-md border g-sign-btn">
                     <span className="text-black  text-l font-semibold font-['Open Sans']">
-                        <img className="w-10 h-8 absolute g-sign-logo" src="https://seeklogo.com/images/G/google-logo-28FA7991AF-seeklogo.com.png"/>Continue with google</span>
+                        <Image alt="Google-logo" className="w-10 h-8 absolute g-sign-logo" src="https://seeklogo.com/images/G/google-logo-28FA7991AF-seeklogo.com.png"/>Continue with google</span>
                 </div>
         </div>
         <div className="relative flex py-2 items-center">
