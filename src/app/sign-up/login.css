@@ -13,11 +13,6 @@
   display: grid;
   grid-template-columns:47.5% 5% 47.5%;
 }
-.slider{
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
 .auto-scroll{
   animation: marquee 10s linear;
 }
