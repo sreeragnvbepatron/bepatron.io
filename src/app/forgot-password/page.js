@@ -9,7 +9,7 @@ import Login_button from '@/Components/Button/Login_button';
 import CreateOrLoginText from '@/Components/CreateOrLoginText';
 import OtpEditor from '@/Components/TextEditor/OtpEditor';
 import Tick from '@/Components/FeedbackToUser/Tick';
-export default function forgot_password(){
+export default function Forgot_password(){
     const [progress, setProgress] = useState("33");
     const handleContinue = () => {
         if (progress === "33") {

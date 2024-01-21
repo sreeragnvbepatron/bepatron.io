@@ -10,7 +10,7 @@ import Sidebar from '@/Components/Sidebar/Sidebar';
 import G_sign_and_separator from '@/Components/G_sign_and _separator';
 import CreateOrLoginText from '@/Components/CreateOrLoginText';
 
-export default function signup() {
+export default function Signup() {
     const [selectedOption, setSelectedOption] = useState(null);
 
     const handleBoxSelect = (option) => {

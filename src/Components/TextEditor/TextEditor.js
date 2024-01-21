@@ -43,7 +43,7 @@ return (<div className='pt-4'>
                                 />
                                 <div className='grid grid-cols-4'>
                                 {tags.map((tag,index) => (
-                                        <div id={index} className="w-auto h-auto mr-2 mt-4 bg-violet-50 rounded-md px-3 py-2 grid grid-cols-12">
+                                        <div key={index} className="w-auto h-auto mr-2 mt-4 bg-violet-50 rounded-md px-3 py-2 grid grid-cols-12">
                                                 <div className="text-blue-800 text-sm font-bold font-['Anderson Grotesk'] col-span-10">{tag}</div>
                                                 <div className='col-span-2 cursor-pointer' onClick={() => handleTagRemoval(index)}>
                                                         <FontAwesomeIcon icon={faTimes} style={{ color: '#0022C0'}}/></div>
