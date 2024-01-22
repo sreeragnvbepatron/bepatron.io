@@ -45,8 +45,8 @@ export default function verify() {
                 </div>
                 <div className="mt-20">
                     <div>
-                        <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                        <label for="bordered-checkbox-1" className="ml-2"><span className="text-zinc-500 text-lg font-bold font-['Anderson Grotesk']">I agree to all
+                        <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label htmlFor="bordered-checkbox-1" className="ml-2"><span className="text-zinc-500 text-lg font-bold font-['Anderson Grotesk']">I agree to all
                         <span className="text-black text-lg font-bold font-['Anderson Grotesk'] cursor-pointer"> Terms & conditions </span>and
                         <span className="text-black text-lg font-bold font-['Anderson Grotesk'] cursor-pointer"> privacy policy</span></span></label>
                     </div>

@@ -18,10 +18,14 @@ export default function Login() {
             <div className="text-zinc-500 text-base font-normal font-['Anderson Grotesk'] mt-16">Hello champ, Welcome back👋</div>
             <G_sign_and_separator/>
             <div>
+                <div>
                 <TextEditor label="Email" type="email" placeholder="Enter your Email Address" mandatory="true" error="false" errorMessage="This email id is already exist, please try another."/>
                 <TextEditor label="Password" type="password" placeholder="Enter your password" mandatory="true"/>
+                </div>
+                <div>
                 <Link href="\forgot-password"><div className="mt-3 text-right text-zinc-500 text-base font-normal font-['Anderson Grotesk'] cursor-pointer">Forgot password ?</div></Link>
                 <Login_button content="Continue"/>
+                </div>
             </div>
             <CreateOrLoginText question="Don't have an account?" action=" Sign up" actionLink="/sign-up"/>
         </div>
