@@ -14,6 +14,7 @@ module.exports = {
       },
       height: {
         '43': '42.5rem',
+        '92':'92%',
       },
       width: {
         '98': '28rem',
@@ -22,6 +23,9 @@ module.exports = {
       fontSize: {
         'xss':'0.65rem'
       },
+      margin:{
+        '10p':'10%'
+      }
     },
   },
   plugins: [],
