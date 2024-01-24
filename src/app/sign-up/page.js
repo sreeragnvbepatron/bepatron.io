@@ -1,6 +1,5 @@
 "use client"; 
-import './login.css';
-import Link from 'next/link'; 
+import './login.css'; 
 import Circular_progressbar from '@/Components/Circular_progreebar/Circular_progressbar';
 import TextEditor from '@/Components/TextEditor/TextEditor';
 import Login_button from '@/Components/Button/Login_button';

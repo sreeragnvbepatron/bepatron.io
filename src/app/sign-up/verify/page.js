@@ -1,5 +1,6 @@
 import Sidebar from "@/Components/Sidebar/Sidebar";
 import '../login.css';
+import Link from 'next/link'; 
 import { faEdit,faCheckCircle,faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import OtpEditor from "@/Components/TextEditor/OtpEditor";
@@ -55,7 +56,7 @@ export default function verify() {
                 
                 <div className='pt-4'>
                     <div className="text-black text-l font-normal font-['Anderson Grotesk']">Already have an account?
-                    <a><span className="text-orange-600 text-l font-bold font-['Anderson Grotesk']"> Login</span></a>
+                    <Link href="\login"><span className="text-orange-600 text-l font-bold font-['Anderson Grotesk'] curosr-pointer"> Login</span></Link>
                     </div>
                 </div>
             </div>
