@@ -8,7 +8,7 @@ import Login_button from "@/Components/Button/Login_button";
 export default function verify() {
     
     return(<div className="grid grid-cols-2">
-        <Sidebar/>
+         <div className='min-h-95vh'><Sidebar /></div>
         <div className="w-9/12">
             <div className="w-120 h-28 mt-28">
                     <div className="w-98">

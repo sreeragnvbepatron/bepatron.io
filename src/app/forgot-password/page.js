@@ -19,7 +19,7 @@ export default function Forgot_password(){
         }
       };
     return(<div className='grid grid-cols-2'>
-        <Sidebar/>
+       <div className='h-95vh'><Sidebar/></div>
         <div className='w-9/12'>
             <div>
                 <div className="mt-10 text-black text-4xl font-normal font-['Anderson Grotesk'] capitalize">uuug! don’t worry</div>

@@ -6,7 +6,7 @@ export default function Sidebar() {
         {name:'Sreehari A J',position:'Senior manager at meta',review:'Simply unbelievable! Lorem ipsum dolor sit amet, conse ctetur ad ipiscing  eiusmod tempor inci di dunt ut labore et dolore magna aliqua laboris nisi ut aliquip labo ris nisi ut aliquip',company_logo:'https://1000logos.net/wp-content/uploads/2021/10/Meta-Logo.png',user_img_url:'https://toppng.com/uploads/preview/circled-user-icon-user-pro-icon-11553397069rpnu1bqqup.png'},
         {name:'Hari Krishna',position:'Products designer at google',review:'Simply unbelievable! Lorem ipsum dolor sit amet, conse ctetur ad ipiscing  eiusmod tempor inci di dunt ut labore et dolore magna aliqua laboris nisi ut aliquip labo ris nisi ut aliquip',company_logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png',user_img_url:'https://toppng.com/uploads/preview/circled-user-icon-user-pro-icon-11553397069rpnu1bqqup.png'},
         ]
-        return (<div className='z-50'>
+        return (<div className='z-50 h-full'>
         <div className="mt-2.5 ml-6 bg-black pb-3 rounded-3xl pb-2 w-11/12 h-full overflow-hidden">
         <div className="mt-2.5 ml-8 text-white text-xl font-medium font-['HK Grotesk Wide']"><Image src={Logo} width={150}
       height={150} alt="Logo of Bepatron"/></div>

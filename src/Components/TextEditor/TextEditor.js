@@ -10,9 +10,7 @@ export default function TextEditor(props) {
         const handleTogglePassword = () => {
                 setShowPassword((prevShowPassword) => !prevShowPassword);
               };
-              const handleInputChange = (event) => {
-                setInputValue(event.target.value);
-              }
+              
               const handleKeyDown = (event) => {
                 if (event.key === 'Enter' && inputValue.trim() !== '') {
                   setTags([...tags, inputValue.trim()]);
@@ -26,13 +24,28 @@ export default function TextEditor(props) {
                 updatedTags.splice(index, 1);
                 setTags(updatedTags);
               };
-              
 
+              const handleInputChange = (event) => {
+                let { name, value } = event.target;
+                setInputValue(value);
+                if (event.target.id === 'areas') {
+                        value = [...tags, value]; 
+                        name = 'interestedAreas'; 
+                    }
+                props.onupdate({
+                    name: name,
+                    value: value
+                });
+                
+            };
+            
+            
 return (<div className='pt-4'>
                 <span className="text-black text-base font-bold font-['Anderson Grotesk']">{props.label}</span>
                 {props.mandatory=="true" && (<span className="text-red-400 text-base font-bold font-['Anderson Grotesk']">*</span>)}
                 {props.label == 'Interested areas (optional)' && <div>
                                 <input 
+                                name={props.name}
                                 className="mt-2 shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
                                 id='areas'
                                 type="text" 
@@ -55,9 +68,12 @@ return (<div className='pt-4'>
                 {props.label != 'Interested areas (optional)' && <div>
                                 <input 
                                 className={`mt-2 shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${props.error == "true" ? 'border-red-500 text-red-500' : ''}`}
+                                name={props.name}
                                 id={props.label}
                                 type={showPassword==false ? props.type:"text"} 
-                                placeholder={props.placeholder}/>
+                                placeholder={props.placeholder}
+                                onChange={handleInputChange}
+                                />
                                 {props.error == "true" && <div className="mt-1 text-red-500 text-xs font-bold font-['Anderson Grotesk']">{props.errorMessage}</div>}
                                 
                         </div>

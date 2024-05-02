@@ -1,5 +1,8 @@
 import '../Assets/CSS/custom.css';
-
+export const metadata = {
+  title: 'Bepatron.io',
+  description: 'Top Mentors United',
+}
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
