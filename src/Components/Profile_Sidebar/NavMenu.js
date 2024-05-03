@@ -2,7 +2,7 @@ import NavMenuItems from "./NavMenuItems";
 import Home from '../../Assets/Icons/Home.svg'
 import Bookings from "../../Assets/Icons/Bookings.svg"
 import Mentors from "../../Assets/Icons/Mentors.svg"
-import Workshops from "../../Assets/Icons/Workshops.svg"
+import Workshops from "../../Assets/Icons/Workshop.svg"
 import Acheivements from "../../Assets/Icons/Acheivements.svg"
 import Rewards from "../../Assets/Icons/Rewards.svg"
 import Settings from "../../Assets/Icons/Settings.svg"
