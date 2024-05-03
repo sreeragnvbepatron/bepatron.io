@@ -13,29 +13,15 @@ import MentorCards from '@/Components/Cards/MentorCards';
 import WorkshopCards from '@/Components/Cards/WorkshopCards';
 import Messages from '@/Components/FeedbackToUser/Messages';
 import Notification from '@/Components/FeedbackToUser/Notification';
-function menteeHome(){
+export default function MenteeHome(){
     const [searchTerm, setSearchTerm] = useState('');
-    // State variable for managing modal visibility
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const notifications = ['Notification 1', 'Notification 2', 'Notification 3'];
     const messages = ['Message 1', 'Message 2', 'Message 3'];
 
-    // Function to handle click event on the image and show the modal
-    const handleImageClick = () => {
-        setIsModalOpen(!isModalOpen);
-    };
-
-    // Function to handle click event outside of the modal and close it
-    const handleOutsideClick = (event) => {
-        console.log(event.target)
-        if (event.target === event.currentTarget) {
-            setIsModalOpen(false);
-        }
-    };
-
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
-  };
+    console.log(searchTerm);
+    };
     const userdata={profilepic:'/../../Assets/Images/1695123394890.jpeg',name:'Sreerag N V',role:'Web Developer'}
     return(<div className="grid grid-cols-12">
         <div className="col-span-2 min-h-screen">
@@ -149,5 +135,3 @@ function menteeHome(){
         </div>
     </div>)
 }
-
-export default menteeHome;

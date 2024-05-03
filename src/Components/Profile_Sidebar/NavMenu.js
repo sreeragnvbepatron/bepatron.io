@@ -2,7 +2,7 @@ import NavMenuItems from "./NavMenuItems";
 import Home from '../../Assets/Icons/Home.svg'
 import Bookings from "../../Assets/Icons/Bookings.svg"
 import Mentors from "../../Assets/Icons/Mentors.svg"
-// import Workshops from "../../Assets/Icons/Workshops.svg"
+import Workshops from "../../Assets/Icons/Workshops.svg"
 import Acheivements from "../../Assets/Icons/Acheivements.svg"
 import Rewards from "../../Assets/Icons/Rewards.svg"
 import Settings from "../../Assets/Icons/Settings.svg"
@@ -18,9 +18,9 @@ export default function NavMenu(props){
             <div className={` hover:text-white ${props.active === 'Mentors' ? 'text-white' : 'text-slate-500 '}`}>
                 <NavMenuItems Itemtitle="Mentors" icon={Mentors}/>
             </div>
-            {/* <div className={` hover:text-white ${props.active === 'Workshops' ? 'text-white' : 'text-slate-500 '}`}>
+           <div className={` hover:text-white ${props.active === 'Workshops' ? 'text-white' : 'text-slate-500 '}`}>
                 <NavMenuItems Itemtitle="Workshops" icon={Workshops}/>
-            </div> */}
+            </div>
             <div className={` hover:text-white ${props.active === 'Acheivements' ? 'text-white' : 'text-slate-500 '}`}>
                 <NavMenuItems Itemtitle="Acheivements" icon={Acheivements}/>
             </div>
